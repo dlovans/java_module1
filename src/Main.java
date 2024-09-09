@@ -1,7 +1,6 @@
-
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println();
+        Variables1 pTypes = new Variables1();
+        pTypes.run();
     }
 }
