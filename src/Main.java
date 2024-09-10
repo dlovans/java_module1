@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Arrays2 placeholder = new Arrays2();
+        Lists1 placeholder = new Lists1();
         placeholder.run();
     }
 }
