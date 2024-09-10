@@ -24,18 +24,18 @@ public class Conditionals6 {
      */
     private void isPersonnummerValid(String personnummer) {
         int controlDigit = Character.getNumericValue(personnummer.charAt(personnummer.length() - 1));
-        boolean isMultipleOfTwo = true;
+        boolean multiplyWithTwo = true;
         String addNumbersToString = "";
         int sum = 0;
 
         for (int i = 0; i < personnummer.length() - 1; i++) {
             int digit = Character.getNumericValue(personnummer.charAt(i));
-            if (isMultipleOfTwo) {
+            if (multiplyWithTwo) {
                 addNumbersToString += digit * 2;
             } else {
                 addNumbersToString += digit;
             }
-            isMultipleOfTwo = !isMultipleOfTwo;
+            multiplyWithTwo = !multiplyWithTwo;
         }
 
         for (int i = 0; i < addNumbersToString.length(); i++) {
