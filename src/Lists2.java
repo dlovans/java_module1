@@ -35,12 +35,12 @@ public class Lists2 {
 
         for (int i = 0; i < numberList.size(); i++) {
             int numberFrequency = 0;
-            innerLoop:
+
             for (Integer integer : numberList) {
                 if (numberList.get(i).equals(integer)) {
                     numberFrequency++;
                 }
-                if (numberFrequency > 1) break innerLoop;
+                if (numberFrequency > 1) break;
             }
             if (numberFrequency == 1 && numberList.get(i) > highestUniqueNumber) highestUniqueNumber = numberList.get(i);
         }
