@@ -32,6 +32,10 @@ public class Arrays1 {
             names[i] = input.nextLine();
         }
 
+        for (String name : names) {
+            int iterator = 1;
+            System.out.println(iterator + ". " + name);
+        }
         return names;
     }
 
@@ -41,6 +45,7 @@ public class Arrays1 {
      * @param names - Name array.
      */
     private void printNamesInReverse(String[] names) {
+        System.out.println("Names in reverse: ");
         for (String name : names) {
             for (int i = name.length() - 1; i >= 0; i--) {
                 System.out.print(name.charAt(i));
