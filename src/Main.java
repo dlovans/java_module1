@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Conditionals4 placeholder = new Conditionals4();
+        Conditionals5 placeholder = new Conditionals5();
         placeholder.run();
     }
 }
